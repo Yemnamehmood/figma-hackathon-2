@@ -38,12 +38,12 @@ const Home = () => {
 
       {/* Header */}
       <header className="bg-white text-black py-4 shadow-md">
-        <div className="container mx-auto flex items-center justify-between px-4">
+        <div className="container mx-auto flex items-center justify-between px-4 flex-wrap">
           {/* Logo */}
           <h1 className="text-2xl font-extrabold">SHOP.CO</h1>
 
           {/* Navigation */}
-          <nav className="flex items-center space-x-6">
+          <nav className="flex items-center space-x-6 md:space-x-6">
           <div className="relative">
     <button
       onClick={() => setShowDropdown((prev) => !prev)} // Toggle the dropdown state
@@ -124,7 +124,7 @@ const Home = () => {
             </p>
 
             {/* Shop Now Button */}
-            <button   onClick={handleProductClick}
+            <button 
 
              className="bg-black text-white py-2 px-6 rounded-md hover:bg-gray-800">
               Shop Now
@@ -157,19 +157,23 @@ const Home = () => {
         </div>
       </div>
                         {/* New Arrivals Section */}
-                        <section className="py-12 px-10 bg-white relative">
-        <h2 className="text-3xl font-bold text-center mb-8">NEW ARRIVALS</h2>
+                        <section className="py-10 px-4 md:px-10 bg-white relative">
+        <h2 className="text-2xl md:text-3xl  font-bold text-center mb-4">NEW ARRIVALS</h2>
         
         {/* Grid Container for Items */}
         <div
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center items-start"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center items-start"
         >
           {/* T-Shirt with Tape Details */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
+
+
             <img
               src="/Frame 32.jpg"
               alt="T-shirt with tape details"
               className="w-full h-[200px] object-cover rounded-[20px] mb-2"
+              onClick={handleProductClick}
+
             />
                         <p className="text-lg font-semibold mb-2">T-Shirt with Tape Details</p>
 
@@ -180,7 +184,7 @@ const Home = () => {
           </div>
 
           {/* Skinny Fit Jeans */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 33.jpg"
               alt="Skinny fit jeans"
@@ -197,7 +201,7 @@ const Home = () => {
           </div>
 
           {/* Checkered Shirt */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 34.jpg"
               alt="Checkered shirt"
@@ -212,7 +216,7 @@ const Home = () => {
           </div>
 
           {/* Sleeve Stripped T-Shirt */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 38 (2).jpg"
               alt="Sleeve stripped t-shirt"
@@ -245,7 +249,7 @@ const Home = () => {
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center items-start"
         >
           {/* Vertical Stripped Shirt */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 32 (1).jpg"
               alt="T-shirt with tape details"
@@ -264,7 +268,7 @@ const Home = () => {
           </div>
 
           {/* Courage Graphic T-Shirt */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 33 (1).jpg"
               alt="Skinny fit jeans"
@@ -279,7 +283,7 @@ const Home = () => {
           </div>
 
           {/* Loose Fit Bermuda Shorts */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 34 (2).jpg"
               alt="Checkered shirt"
@@ -294,7 +298,7 @@ const Home = () => {
           </div>
 
           {/* Faded Skinny Jeans */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 38 (3).jpg"
               alt="Sleeve stripped t-shirt"
@@ -316,16 +320,16 @@ const Home = () => {
       </section>
 
             {/* Browse by Dress Style Section */}
-            <section className="py-12 px-10 bg-white relative">
+            <section className="py-12 px-10 bg-white relative transition-transform">
         {/* Section Heading */}
-        <h2 className="text-3xl font-bold text-center mb-8">BROWSE BY DRESS STYLE</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 transition duration-300 hover:scale-105 hover:opacity-90">BROWSE BY DRESS STYLE</h2>
 
         {/* Grid Container for Collage-style 4 images */}
         <div
           className="relative grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-center items-center"
           style={{
             width: "900px",
-            height: "600px",
+            height: "700px",
             borderRadius: "30px",
             backgroundColor: "#e0e0e0", // Gray background
             margin: "0 auto", // Center align the entire div
@@ -376,7 +380,7 @@ const Home = () => {
   {/* Testimonial Grid */}
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {/* Testimonial 1 */}
-    <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+    <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg hover:scale-105">
       <img
         src="/Frame 62.jpg"
         alt="Customer 1"
@@ -385,7 +389,7 @@ const Home = () => {
     </div>
 
     {/* Testimonial 2 */}
-    <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+    <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg hover:scale-105">
       <img
         src="/Frame 61 (1).jpg"
         alt="Customer 2"
@@ -394,7 +398,7 @@ const Home = () => {
     </div>
 
     {/* Testimonial 3 */}
-    <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+    <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg hover:scale-105">
       <img
         src="/Frame 22.jpg"
         alt="Customer 3"

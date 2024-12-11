@@ -12,6 +12,7 @@ const ProductDetail = () => {
   const [activeTab, setActiveTab] = useState("productDetails");
   const router = useRouter(); // Navigation ke liye useRouter hook
 
+
   const handleAddToCart = () => {
     // Navigate to the cart page
     router.push("/addtocart");
@@ -122,6 +123,7 @@ const ProductDetail = () => {
       {/* Right Section: Product Details */}
       <div className="space-y-6 md:ml-6">
         <h1 className="text-2xl font-semibold">ONE LIFE GRAPHIC T-SHIRT</h1>
+        
         <div className="flex items-center gap-2">
           <div className="text-yellow-500">★★★★★</div>
           <span className="text-gray-500">(5/5)</span>

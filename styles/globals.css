@@ -58,3 +58,20 @@ body {
     padding: 16px;
   }
 }
+/* General mobile styling */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .navbar {
+    flex-direction: column; /* Change navbar layout */
+  }
+
+  .hero-section {
+    font-size: 16px; /* Adjust text size for mobile */
+    padding: 10px;
+  }
+}
