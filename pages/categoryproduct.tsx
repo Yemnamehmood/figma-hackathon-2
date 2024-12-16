@@ -198,12 +198,12 @@ const category =()=>{
 
             {/* Grid Container for Items */}
             <div
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 items-start p-10"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 items-start p-10"
         >
 
 
           {/* Gradient Graphic T-Shirt */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 33 (2).jpg"
               alt="Skinny fit jeans"
@@ -218,7 +218,7 @@ const category =()=>{
           </div>
 
           {/* Polo With Tipping Details */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 34 (1).jpg"
               alt="Checkered shirt"
@@ -233,7 +233,7 @@ const category =()=>{
           </div>
 
           {/* Black Stripped T-Shirt */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 38 (1).jpg"
               alt="Sleeve stripped t-shirt"
@@ -247,7 +247,7 @@ const category =()=>{
             <p className="text-lg font-semibold mb-2">$120</p>
           </div>
                     {/* Skinny Fit Jeans */}
-                    <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+                    <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 33.jpg"
               alt="Skinny fit jeans"
@@ -264,7 +264,7 @@ const category =()=>{
           </div>
 
           {/* Checkered Shirt */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 34.jpg"
               alt="Checkered shirt"
@@ -279,7 +279,7 @@ const category =()=>{
           </div>
 
           {/* Sleeve Stripped T-Shirt */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 38 (2).jpg"
               alt="Sleeve stripped t-shirt"
@@ -295,7 +295,7 @@ const category =()=>{
             </p>
           </div>
                     {/* Vertical Stripped Shirt */}
-                    <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+                    <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 32 (1).jpg"
               alt="T-shirt with tape details"
@@ -314,7 +314,7 @@ const category =()=>{
           </div>
 
           {/* Courage Graphic T-Shirt */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 33 (1).jpg"
               alt="Skinny fit jeans"
@@ -329,7 +329,7 @@ const category =()=>{
           </div>
 
           {/* Loose Fit Bermuda Shorts */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 34 (2).jpg"
               alt="Checkered shirt"
