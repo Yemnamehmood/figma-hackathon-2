@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <div>
       {/* Top Line */}
-      <div className="bg-black text-white text-center text-sm py-2">
+      <div className="bg-black text-white text-center text-xs md:text-sm py-2 px-2">
         Sign up and get 20% off your first order.{" "}
         <a href="#" className="underline">
           Sign up now
@@ -40,10 +40,10 @@ const Home = () => {
       <header className="bg-white text-black py-4 shadow-md">
         <div className="container mx-auto flex items-center justify-between px-4 flex-wrap">
           {/* Logo */}
-          <h1 className="text-2xl font-extrabold">SHOP.CO</h1>
+          <h1 className="text-xl md:text-2xl font-extrabold">SHOP.CO</h1>
 
           {/* Navigation */}
-          <nav className="flex items-center space-x-6 md:space-x-6">
+          <nav className="flex items-center space-x-4 lg:space-x-6">
           <div className="relative">
     <button
       onClick={() => setShowDropdown((prev) => !prev)} // Toggle the dropdown state
@@ -76,14 +76,23 @@ const Home = () => {
               Brands
             </a>
           </nav>
+           
+                 {/* Mobile Menu */}
+      <button
+        className="md:hidden bg-black text-white p-2 rounded"
+        onClick={() => setShowDropdown(!showDropdown)}
+      >
+        ☰
+      </button>
+
 
           {/* Search Bar */}
-          <div className="flex items-center space-x-4">
-            <div className="relative flex items-center">
+          <div className="flex items-center space-x-4  md:space-x-4 mt-4 md:mt-0 w-full md:w-auto">
+            <div className="relative flex items-center w-full md:w-auto">
               <input
                 type="text"
                 placeholder="Search for products"
-                className="py-2 px-4 w-80 rounded-md border border-gray-300 text-black"
+                className="py-2 px-4 w-full md:w-64 rounded-md border border-gray-300 text-black"
               />
               <span className="absolute right-3 text-gray-500 cursor-pointer">
                 🔍
@@ -104,12 +113,12 @@ const Home = () => {
       </header>
 
       {/* Hero Section */}
-      <main className="py-20 px-10 bg-[#F2F0F1]">
-        <div className="flex flex-wrap items-center justify-between">
+      <main className="py-10 px-4 md:px-10 bg-[#F2F0F1]">
+        <div className="flex flex-wrap md:flex-nowrap items-center justify-between">
           {/* Left Content */}
-          <div className="max-w-lg mb-4 md:mb-0 md:w-1/2">
+          <div className="w-full md:w-1/2 mb-6 md:mb-0">
             {/* Main Heading */}
-            <h1 className="text-5xl font-extrabold mb-4 leading-tight">
+            <h1 className="text-2xl md:text-5xl font-extrabold mb-4 leading-tight">
               FIND CLOTHES
               <br />
               THAT MATCHES
@@ -118,7 +127,7 @@ const Home = () => {
             </h1>
 
             {/* Subtext */}
-            <p className="text-gray-700 text-lg mb-6 leading-snug">
+            <p className="text-gray-700 text-sm md:text-lg mb-6 leading-snug">
               Browse through our diverse range of meticulously crafted garments, designed
               to bring out your individuality and cater to your sense of style.
             </p>
@@ -158,11 +167,11 @@ const Home = () => {
       </div>
                         {/* New Arrivals Section */}
                         <section className="py-10 px-4 md:px-10 bg-white relative">
-        <h2 className="text-2xl md:text-3xl  font-bold text-center mb-4">NEW ARRIVALS</h2>
+        <h2 className="text-xl md:text-3xl  font-bold text-center mb-4">NEW ARRIVALS</h2>
         
         {/* Grid Container for Items */}
         <div
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center items-start"
+          className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center items-start"
         >
           {/* T-Shirt with Tape Details */}
           <div className="bg-gray-100 shadow-md rounded-[20px] p-4 hover:shadow-lg hover:scale-105">
@@ -189,6 +198,8 @@ const Home = () => {
               src="/Frame 33.jpg"
               alt="Skinny fit jeans"
               className="w-full h-[200px] object-cover rounded-[20px] mb-2"
+              onClick={handleProductClick}
+
             />
                         <p className="text-lg font-semibold mb-2">Skinny Fit Jeans</p>
 
@@ -206,6 +217,8 @@ const Home = () => {
               src="/Frame 34.jpg"
               alt="Checkered shirt"
               className="w-full h-[200px] object-cover rounded-[20px] mb-2"
+              onClick={handleProductClick}
+
             />
                         <p className="text-lg font-semibold mb-2">Checkered Shirt</p>
 
@@ -221,6 +234,8 @@ const Home = () => {
               src="/Frame 38 (2).jpg"
               alt="Sleeve stripped t-shirt"
               className="w-full h-[200px] object-cover rounded-[20px] mb-2"
+              onClick={handleProductClick}
+
             />
                         <p className="text-lg font-semibold mb-2">Sleeve Stripped T-Shirt</p>
 
@@ -242,7 +257,7 @@ const Home = () => {
 
             {/* TOP SELLING */}
             <section className="py-12 px-10 bg-white relative">
-        <h2 className="text-3xl font-bold text-center mb-8"> TOP SELLING</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8"> TOP SELLING</h2>
         
         {/* Grid Container for Items */}
         <div
@@ -258,7 +273,7 @@ const Home = () => {
              <p className="text-lg font-semibold mb-2"> Vertical Stripped Shirt</p>
 
             <div className="flex items-center mb-2">
-              <span className="text-yellow-500 text-sm">⭐⭐⭐⭐⭐ 5/5</span>
+              <span className="text-yellow-500 text-xs md:text-sm">⭐⭐⭐⭐⭐ 5/5</span>
             </div>
             <p className="text-lg font-semibold mb-2">
               <span className="text-black">$212</span>{" "}

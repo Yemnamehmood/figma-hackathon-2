@@ -195,7 +195,7 @@ const ProductDetail = () => {
               +
             </button>
             <button 
-            className="ml-4 px-6 py-3 bg-black text-white rounded-lg"
+            className="ml-4 px-6 py-3 bg-black text-white rounded-lg  hover:shadow-lg hover:scale-105"
             onClick={handleAddToCart} // Button ka onClick handler
             >
 
@@ -266,7 +266,7 @@ const ProductDetail = () => {
         ].map((item, index) => (
             <div
               key={index}
-              className="overflow-hidden flex items-center justify-center"
+              className="overflow-hidden flex items-center justify-center  hover:shadow-lg hover:scale-105"
             >
               {/* Adjusted and Resized Image */}
               <img
@@ -293,7 +293,7 @@ const ProductDetail = () => {
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center items-start"
         >
           {/* Polo With Contrast Trims */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4  hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 32 (2).jpg"
               alt="T-shirt with tape details"
@@ -312,7 +312,7 @@ const ProductDetail = () => {
           </div>
 
           {/* Gradient Graphic T-Shirt */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4  hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 33 (2).jpg"
               alt="Skinny fit jeans"
@@ -327,7 +327,7 @@ const ProductDetail = () => {
           </div>
 
           {/* Polo With Tipping Details */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4  hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 34 (1).jpg"
               alt="Checkered shirt"
@@ -342,7 +342,7 @@ const ProductDetail = () => {
           </div>
 
           {/* Black Stripped T-Shirt */}
-          <div className="bg-gray-100 shadow-md rounded-[20px] p-4">
+          <div className="bg-gray-100 shadow-md rounded-[20px] p-4  hover:shadow-lg hover:scale-105">
             <img
               src="/Frame 38 (1).jpg"
               alt="Sleeve stripped t-shirt"
